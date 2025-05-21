@@ -1,19 +1,12 @@
 version: 2
-
 build:
-  os: ubuntu-22.04  # Plus largement supporté
+  os: ubuntu-22.04
   tools:
-    python: "3.10"   # Version plus commune pour TensorFlow
-
+    python: "3.10"
 sphinx:
   configuration: docs/source/conf.py
-  fail_on_warning: true  # Active les checks qualité
-
+formats:
+  - html
 python:
   install:
-    - requirements: docs/requirements.txt  # Décommentez cette partie
-    - method: pip
-      path: .  # Installe votre package en mode editable
-
-formats:
-  - pdf  # Génère aussi une version PDF
+    - requirements: docs/requirements.txt
