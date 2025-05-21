@@ -14,7 +14,7 @@ Fichier ``preprocessing.py`` contenant :
 
    - Analyse univariée et bivariée 
 
-   - Normalisation RobustScaler
+   - Normalisation : RobustScaler
 
 2. **Feature Engineering**
    - Calcul du RSI (14 périodes)
