@@ -7,14 +7,21 @@ Pipeline de données
 
 Fichier ``preprocessing.py`` contenant :
 
-1. Nettoyage des données
+1. **Nettoyage des données**
    - Gestion des valeurs manquantes
+
    - Normalisation RobustScaler
 
-2. Feature Engineering
+2. **Feature Engineering**
    - Calcul du RSI (14 périodes)
-   - Indicateur MACD (12,26,9)
+
+   - Indicateur MACD
+
    - Volatilité historique
+
+   - Momentum
+
+   - EMA20
 
 .. list-table:: Features utilisées
    :header-rows: 1
