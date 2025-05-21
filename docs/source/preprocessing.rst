@@ -10,6 +10,10 @@ Fichier ``preprocessing.py`` contenant :
 1. **Nettoyage des données**
    - Gestion des valeurs manquantes
 
+   - Visualisation de la matrice de corrélation
+
+   - Analyse univariée et bivariée 
+
    - Normalisation RobustScaler
 
 2. **Feature Engineering**
