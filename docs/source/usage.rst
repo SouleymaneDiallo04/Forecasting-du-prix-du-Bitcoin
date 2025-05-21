@@ -37,6 +37,7 @@ Fonctionnalités disponibles
    - Partage de stratégies
 
 8. **ChatBot**
+
    - Demander conseils de trading
 
    - Demander prix du lendemain
