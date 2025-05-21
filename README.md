@@ -34,7 +34,8 @@ Entraînement d'un modèle séquence-à-séquence (60 jours → 1 jour)
 
 Intégration des prédictions dans une interface temps réel
 
-Métriques Performances
+**Métriques Performances**
+
 Erreur Moyenne Absolue (MAE) : ±1 522 USD
 
 Précision directionnelle : 72%
