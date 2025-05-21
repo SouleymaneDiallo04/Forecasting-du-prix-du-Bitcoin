@@ -31,11 +31,12 @@ Fonctionnalités disponibles
 6. **Alertes personnalisables** 
 
 7. **Espace communautaire** :
+
    - Commentaires utilisateurs
 
    - Partage de stratégies
 
-8.**ChatBot**
+8. **ChatBot**
    - Demander conseils de trading
 
    - Demander prix du lendemain
