@@ -23,6 +23,7 @@ Fonctionnalités disponibles
 4. **Affichage des indicateurs techniques**
 
 5. **Prédiction J+1** : 
+
    - Bouton "Exécuter la prédiction"
 
    - Affichage graphique
@@ -35,7 +36,6 @@ Fonctionnalités disponibles
    - Partage de stratégies
 
 8.**ChatBot**
-
    - Demander conseils de trading
 
    - Demander prix du lendemain
