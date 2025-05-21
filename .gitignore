@@ -1,0 +1,27 @@
+# Sphinx build
+docs/build/
+docs/build/*
+
+# Sphinx cache
+docs/source/.doctrees/
+docs/source/.buildinfo
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Fichiers temporaires
+*.log
+*.tmp
+*.swp
+.DS_Store
+
+# Environnement virtuel
+env/
+venv/
+.venv/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
