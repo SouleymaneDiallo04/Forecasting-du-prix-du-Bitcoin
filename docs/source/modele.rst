@@ -46,7 +46,7 @@ Entraînement du modèle
 Métriques Clés
 --------------
 - **MAE** : 1522 $
-- ** RMSE** : 2262 $
+- **RMSE** : 2262 $
 - **Précision directionnelle** : 72%
 
 **Fenêtre temporelle** : 60 jours → 1 jour
