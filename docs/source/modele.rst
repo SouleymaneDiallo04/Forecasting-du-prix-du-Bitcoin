@@ -17,14 +17,21 @@ Description du notebook ``Modele.ipynb`` contenant :
    :caption: Exemple d'architecture:
 
    model = Sequential([
-       LSTM(units=50, return_sequences=True, input_shape=(60, 7)),
-       Dropout(0.2),
-       LSTM(units=50),
-       Dense(1)
+    # Augmentation temporelle
+    x = GaussianNoise(0.01)(inputs)
+
+    # Couches principales
+    x = Conv1D(32, 3, padding='same', activation='relu')(x)
+    x = LSTM(64, return_sequences=False)(x)
+    x = Dropout(0.3)(x)
+
+    # Sortie
+    outputs = Dense(1)(x)
    ])
 
 Métriques Clés
 --------------
-- **MAE** : ±1500 USD
+- **MAE** : 1522 $
+- ** RMSE** : 2262 $
 - **Précision directionnelle** : 72%
 - **Fenêtre temporelle** : 60 jours → 1 jour
