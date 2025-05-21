@@ -21,6 +21,6 @@ Fonctionnalités du fichier ``streamlit_Chatbot.py`` :
 
   - ``generate_advice()`` : Génère des signaux trading
 
-.. image:: "img/dashbord.png"
+.. image:: "dashbord.png"
    :width: 600
    :alt: Capture du dashboard
