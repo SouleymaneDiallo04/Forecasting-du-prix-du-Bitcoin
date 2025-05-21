@@ -18,11 +18,15 @@ Description du notebook ``Modele.ipynb`` contenant :
 
    model = Sequential([
     # Augmentation temporelle
+
     x = GaussianNoise(0.01)(inputs)
 
     # Couches principales
+
     x = Conv1D(32, 3, padding='same', activation='relu')(x)
+
     x = LSTM(64, return_sequences=False)(x)
+
     x = Dropout(0.3)(x)
 
     # Sortie
@@ -31,6 +35,7 @@ Description du notebook ``Modele.ipynb`` contenant :
 
 Entraînement du modèle
 ----------------------
+.. code-block:: python
 
         history = model.fit(
             X_train[train_idx], y_train[train_idx],
