@@ -91,3 +91,28 @@ Phase 3: Évaluation
       - Export du modèle et du pipeline de préprocessing 
 
 
+Phase 3: Évaluation
+^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :header-rows: 1
+   :widths: 20 30 50
+   
+   * - Étape
+     - Outils/Méthodes
+     - Description
+   * - Inverse Scaling
+     - ``scaler.inverse_transform``
+     - Conversion en USD
+   * - Nettoyage
+     - ``np.isnan()``
+     - Filtrage des NaN
+   * - Visualisation
+     - ``matplotlib``
+     - Graphiques comparatifs
+   * - Métriques
+     - ``MAE``, ``RMSE``
+     - Performance en USD
+   * - Sauvegarde
+     - ``model.save()``
+     - Export final
