@@ -14,19 +14,18 @@ Métriques Clés de Performance
 
 Les principales métriques d'évaluation sur l'ensemble de test :
 
-+------------------------------+----------------+--------------------------------+
-| Métrique                     | Valeur         | Interprétation                 |
-+==============================+================+================================+
-| **MAE** (Erreur Absolue Moyenne) | 1552.32        | Écart moyen absolu entre les   |
-|                              |                | prédictions et la réalité      |
-+------------------------------+----------------+--------------------------------+
-| **RMSE** (Root Mean Square   | 2371.43        | Mesure des erreurs importantes |
-| Error)                       |                | avec pondération quadratique   |
-+------------------------------+----------------+--------------------------------+
-| **Précision Directionnelle** | 72.3%          | Pourcentage de prédictions     |
-|                              |                | correctes de la tendance       |
-|                              |                | (hausse/baisse)                |
-+------------------------------+----------------+--------------------------------+
++------------------------------+----------+-----------------------------------------+
+| Métrique                     | Valeur   | Interprétation                          |
++==============================+==========+=========================================+
+| **MAE** (Erreur Absolue      | 1552.32  | Écart moyen absolu entre les            |
+| Moyenne)                     |          | prédictions et la réalité               |
++------------------------------+----------+-----------------------------------------+
+| **RMSE** (Root Mean Square   | 2371.43  | Mesure des erreurs importantes avec     |
+| Error)                       |          | pondération quadratique                 |
++------------------------------+----------+-----------------------------------------+
+| **Précision Directionnelle** | 72.3%    | Pourcentage de prédictions correctes    |
+|                              |          | de la tendance (hausse/baisse)          |
++------------------------------+----------+-----------------------------------------+
 
 Visualisation des Prédictions
 -----------------------------
