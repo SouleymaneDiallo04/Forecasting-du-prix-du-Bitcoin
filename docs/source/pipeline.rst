@@ -98,10 +98,6 @@ Phase 3: Évaluation
    :header-rows: 1
    :widths: 20 30 50
    
-.. list-table::
-   :header-rows: 1
-   :widths: 20 30 50
-   
    * - Étape
      - Outils/Méthodes
      - Description
