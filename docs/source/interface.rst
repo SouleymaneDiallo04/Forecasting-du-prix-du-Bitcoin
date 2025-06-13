@@ -10,6 +10,11 @@ CryptoAnalyticsPro
 ## Présentation Globale
 Cette application web interactive offre une suite complète d'outils pour l'analyse et la prédiction du prix du Bitcoin, intégrant:
 
+.. image:: dashbord.png
+   :width: 100%
+   :align: center
+   :alt: Aperçu de l'interface
+
 1. Système d'authentification sécurisé
 2. Visualisation de données temps réel
 3. Prédictions de prix par deep learning
