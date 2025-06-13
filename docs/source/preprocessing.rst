@@ -394,7 +394,8 @@ Calcul des Métriques de Performance
    print("\nPerformance du Modèle:")
    print(f"MAE: {mae:.2f} USD")
    print(f"RMSE: {rmse:.2f} USD")
-   print(f"Directionnal Accuracy : {DA:.2f} %")   
+   print(f"Directionnal Accuracy : {DA:.2f} %")
+
    # Sauvegarde des résultats
    with open('model_performance.txt', 'w') as f:
        f.write(f"MAE: {mae:.2f}\n")
