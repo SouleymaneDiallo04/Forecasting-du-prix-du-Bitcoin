@@ -7,7 +7,6 @@ Interface Streamlit
 CryptoAnalyticsPro
 ==================
 
-## Présentation Globale
 Cette application web interactive offre une suite complète d'outils pour l'analyse et la prédiction du prix du Bitcoin, intégrant:
 
 .. image:: dashbord.png
@@ -16,15 +15,20 @@ Cette application web interactive offre une suite complète d'outils pour l'anal
    :alt: Aperçu de l'interface
 
 1. Système d'authentification sécurisé
-2. Visualisation de données temps réel
-3. Prédictions de prix par deep learning
-4. Assistant trading intelligent
-5. Système d'alertes personnalisées
-6. Espace communautaire collaboratif
+2. Utilisation données en temps  réel
+3. Calcul des indicateurs techniques
+4. Importation de son dataset CSV
+5. Prédiction du prix du lendemain
+6. Assistant trading intelligent
+7. Système d'alertes personnalisées
+8. Espace communautaire collaboratif
 
-## Fonctionnalités Détailées avec Code
+Fonctionnalités Détailées avec Code
+===================================
 
-### 1. Authentification Utilisateur
+1. Authentification Utilisateur
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Système complet de création de compte et connexion avec base SQLite.
 
 .. code-block:: python
@@ -53,7 +57,9 @@ Système complet de création de compte et connexion avec base SQLite.
                 (username, password))
        return c.fetchone() is not None
 
-### 2. Tableau de Bord Analytique
+2. Tableau de Bord Analytique
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Visualisation interactive avec Plotly et calculs d'indicateurs techniques.
 
 .. code-block:: python
@@ -82,7 +88,9 @@ Visualisation interactive avec Plotly et calculs d'indicateurs techniques.
        fig.update_layout(height=500, xaxis_rangeslider_visible=True)
        return fig
 
-### 3. Assistant Trading Intelligent
+3. Assistant Trading Intelligent
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Chatbot avec analyse de marché et conseils automatisés.
 
 .. code-block:: python
@@ -124,7 +132,9 @@ Chatbot avec analyse de marché et conseils automatisés.
            elif "conseil" in query.lower():
                return "\n".join(self.generate_advice())
 
-### 4. Prédiction Temps Réel
+4. Prédiction Temps Réel
+^^^^^^^^^^^^^^^^^^^^^^^^
+
 Modèle LSTM pour la prédiction des prix avec indicateurs de confiance.
 
 .. code-block:: python
@@ -147,7 +157,9 @@ Modèle LSTM pour la prédiction des prix avec indicateurs de confiance.
        prediction = model.predict(np.array([sequence]))
        return processor.inverse_transform(prediction)[0]
 
-### 5. Système d'Alertes Personnalisées
+5. Système d'Alertes Personnalisées
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Création et gestion d'alertes basées sur des conditions de marché.
 
 .. code-block:: python
@@ -175,7 +187,9 @@ Création et gestion d'alertes basées sur des conditions de marché.
    for cond, val in alerts:
        st.sidebar.info(f"Alerte: {cond} {val}")
 
-### 6. Espace Communautaire
+6. Espace Communautaire
+^^^^^^^^^^^^^^^^^^^^^^^
+
 Système de commentaires et interactions entre utilisateurs.
 
 .. code-block:: python
