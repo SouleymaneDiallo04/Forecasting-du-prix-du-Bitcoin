@@ -201,7 +201,8 @@ Système de commentaires et interactions entre utilisateurs.
    for user, cmt, time in comments:
        st.markdown(f"**{user}** - {time.strftime('%d/%m/%Y %H:%M')}: {cmt}")
 
-### 7. Analyse Technique Avancée
+7. Analyse Technique Avancée
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Calcul et visualisation des indicateurs techniques.
 
 .. code-block:: python
@@ -223,3 +224,9 @@ Calcul et visualisation des indicateurs techniques.
        ema_fast = prices.ewm(span=fast).mean()
        return ema_fast - ema_slow
 
+Architecture principale 
+^^^^^^^^^^^^^^^^^^^^^^^
+.. image:: use_case_diagram.png
+   :width: 100%
+   :align: center
+   :alt: Diagramme de Cas d'Utilisation
