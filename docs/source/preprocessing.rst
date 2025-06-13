@@ -39,7 +39,8 @@ Calcul des indicateurs techniques
    for lag in [1, 3, 7, 15, 30, 60]:
        data[f'fear_greed_lag_{lag}'] = data['fear_greed'].shift(lag)
 
-### Analyse de corrélation des décalages
+Analyse de corrélation des décalages
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: python
    :linenos:
@@ -52,7 +53,8 @@ Calcul des indicateurs techniques
 =======================
 
 
-### Analyse Univariée
+Analyse Univariée
+^^^^^^^^^^^^^^^^^
 
 .. code-block:: python
    :linenos:
@@ -75,7 +77,8 @@ Calcul des indicateurs techniques
    data['MACD'].plot(ax=ax[2], title='Indicateur MACD')
    plt.tight_layout()
 
-### Analyse Bivariée
+Analyse Bivariée
+^^^^^^^^^^^^^^^^
 
 .. code-block:: python
    :linenos:
@@ -93,7 +96,8 @@ Calcul des indicateurs techniques
    plt.title('Matrice de Corrélation')
    plt.show()
 
-### Tests Statistiques (KPSS, ACF, PACF)
+Tests Statistiques (KPSS, ACF, PACF)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: python
    :linenos:
@@ -120,7 +124,8 @@ Calcul des indicateurs techniques
 4. Pipeline de Prétraitement
 ============================
 
-### Classe de Création de Séquences
+Classe de Création de Séquences
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: python
    :linenos:
@@ -145,7 +150,8 @@ Calcul des indicateurs techniques
                y_seq.append(X[i+self.seq_length, self.target_idx])
            return np.array(X_seq), np.array(y_seq)
 
-### Pipeline Complet
+Pipeline Complet
+^^^^^^^^^^^^^^^^
 
 .. code-block:: python
    :linenos:
@@ -395,5 +401,4 @@ Calcul des Métriques de Performance
    with open('model_performance.txt', 'w') as f:
        f.write(f"MAE: {mae:.2f}\n")
        f.write(f"RMSE: {rmse:.2f}\n")
-       f.write(f"R²: {r2:.4f}\n")
 
