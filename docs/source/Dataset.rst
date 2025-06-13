@@ -184,4 +184,4 @@ Statistiques Clés
 - **Taux de complétion**: 99.2% avant imputation
 
 .. note::
-   Le dataset final contient également des caractéristiques dérivées comme les moyennes mobiles et les retards temporels qui ne sont pas listés ici pour plus de clarté.
+  **Note :** Le dataset final contient également des caractéristiques dérivées comme les moyennes mobiles et les retards temporels qui ne sont pas listés ici pour plus de clarté.
