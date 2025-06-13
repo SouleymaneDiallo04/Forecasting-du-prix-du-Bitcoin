@@ -26,11 +26,12 @@ Encadé par :
    introduction
    installation
    pipeline
-   dataset
+   Dataset
    preprocessing
    modele
    interface
    usage
+   conclusion
 
 Indices and tables
 ==================
