@@ -24,16 +24,16 @@ Phase 1: Préparation des Données
      - Gestion des valeurs manquantes et outliers
    * - Feature Engineering
      - Volatilité, MACD, Lags Fear_Greed
-     - Création de 15+ indicateurs techniques
+     - Création de 15+ indicateurs techniques et décalages temporels
    * - Analyse Univariée
      - KPSS, ADFuller, ACF/PACF
-     - Tests de stationnarité
+     - Tests de stationnarité et analyse d'autocorrélation
    * - Analyse Bivariée
-     - Matrice de corrélation
-     - Identification des relations
+     - Matrice de corrélation, Lag Analysis
+     - Identification des relations entre features et target
    * - Préprocessing
      - ``RobustScaler()``
-     - Normalisation robuste
+     - Normalisation robuste aux outliers
 
 Phase 2: Modélisation et Optimisation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -47,22 +47,22 @@ Phase 2: Modélisation et Optimisation
      - Description
    * - Création de Séquences
      - ``SequenceTransformer``
-     - Fenêtres de 60 pas
+     - Transformation en séquences temporelles (60 jours)
    * - Split Temporel
      - ``TimeSeriesSplit(n_splits=5)``
-     - Validation 80/20
+     - Validation croisée temporelle (80/20)
    * - Architecture Modèle
      - ``build_advanced_model()``
-     - LSTM/BiLSTM/CNN-LSTM
-   * - Optimisation
+     - CNN-LSTM avec couches configurables
+   * - Optimisation Hyperparamètres 
      - ``Optuna (50 essais)``
-     - Recherche hyperparamètres
-   * - Callbacks
-     - ``EarlyStopping``
-     - Régulation dynamique
-   * - Entraînement
-     - ``Adam`` + ``Huber``
-     - 300 epochs
+     -  Recherche automatique des meilleurs paramètres (unités, couches, dropout)
+   * - Callbacks Intelligents
+     - ``EarlyStopping``, ``ReduceLROnPlateau``
+     - Arrêt précoce et ajustement dynamique du learning rate
+   * - Entraînement Final
+     - ``Adam`` optimizer, ``Huber loss``	
+     - Entraînement sur données complètes (300 epochs)
 
 Phase 3: Évaluation
 ^^^^^^^^^^^^^^^^^^^
@@ -75,25 +75,17 @@ Phase 3: Évaluation
      - Outils/Méthodes
      - Description
    * - Inverse Scaling
-     - ``scaler.inverse_transform``
-     - Conversion en USD
-   * - Nettoyage
-     - ``np.isnan()``
-     - Filtrage des NaN
+     - Matrices Dummy + ``scaler.inverse_transform``
+     - Transformation des prédictions en USD
+   * - Nettoyage des Données
+     - Masque booléen + ``np.isnan()``
+     - Filtrage des valeurs aberrantes et NaN
    * - Visualisation
-     - ``matplotlib``
-     - Graphiques comparatifs
-   * - Métriques
-     - ``MAE``, ``RMSE``
-     - Performance en USD
+     - ``matplotlib``, ``plotly``	
+     - Comparaison graphique prix réel vs prédictions (données nettoyées)
+   * - Métriques de Performance
+     - ``MAE``, ``RMSE``, ``Directionnal Accuracy``
+     - Calcul des erreurs en USD et précision directionnelle
    * - Sauvegarde
-     - ``model.save()``
-     - Export final
-
-.. note::
-   Assurez-vous que :
-   1. Les sauts de ligne sont corrects
-   2. Pas d'espaces avant les `.. list-table::`
-   3. Chaque phase a bien son titre `^^^^^^^^^`
-
-
+    * - ``model.save()`` + ``joblib``	
+      - Export du modèle et du pipeline de préprocessing 
