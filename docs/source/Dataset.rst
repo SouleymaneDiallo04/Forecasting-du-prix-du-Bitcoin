@@ -72,7 +72,9 @@ Sources de Données
 
 2. **Indice Fear & Greed**
    - **Source**: `Alternative.me API <https://alternative.me/crypto/fear-and-greed-index/>`_
+
    - **Description**: Mesure du sentiment du marché (0-100)
+
    - **Code de collecte**:
 
    .. code-block:: python
@@ -174,8 +176,6 @@ Features Utilisées
      - Nombre d'adresses actives (participant aux transactions)
    * - **TxTfrCnt**
      - Nombre total de transferts de valeur (en BTC)
-   * - **Volatility**
-     - Volatilité intra-journée calculée comme (High - Low) / Low
 
 Statistiques Clés
 -----------------
