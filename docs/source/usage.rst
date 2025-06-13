@@ -37,4 +37,4 @@ Comparaison des prix réels et prédits sur la période de test :
    :align: center
    :alt: Aperçu de l'interface
    
-Les prédictions (orange) suivent étroitement les prix réels (bleu), particulièrement dans les tendances stables*
+Les prédictions (orange) suivent étroitement les prix réels (bleu), particulièrement dans les tendances stables mais a du mal dès que le marché est affecté par des décisions politiques ou des déclarations de personnes influentes d'où la nécessité de rajouter des données encore plus globales.
