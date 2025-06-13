@@ -19,7 +19,7 @@
 
 project = 'Forecasting du prix du Bitcoin'
 copyright = '2025, Souleymane Diallo'
-author = 'Souleymane Diallo'
+author = 'Souleymane Diallo & Hinimdou Morsia Guitdam'
 
 # The full version, including alpha/beta/rc tags
 release = '1.0'
