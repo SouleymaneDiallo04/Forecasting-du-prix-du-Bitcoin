@@ -25,6 +25,7 @@ Encadé par :
    
    introduction
    installation
+   pipeline
    dataset
    preprocessing
    modele
