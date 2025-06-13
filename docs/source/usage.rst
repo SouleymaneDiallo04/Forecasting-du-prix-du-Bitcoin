@@ -32,7 +32,7 @@ Visualisation des Prédictions
 
 Comparaison des prix réels et prédits sur la période de test :
 
-.. image:: predictions_vs_reality.png
+.. image:: resultat.png
    :alt: Comparaison prix réels vs prédits
    :align: center
    :width: 90%
