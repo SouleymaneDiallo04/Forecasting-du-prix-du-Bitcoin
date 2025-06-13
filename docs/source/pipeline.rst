@@ -87,32 +87,5 @@ Phase 3: Évaluation
      - ``MAE``, ``RMSE``, ``Directionnal Accuracy``
      - Calcul des erreurs en USD et précision directionnelle
    * - Sauvegarde
-    * - ``model.save()`` + ``joblib``	
-      - Export du modèle et du pipeline de préprocessing 
-
-
-Phase 3: Évaluation
-^^^^^^^^^^^^^^^^^^^
-
-.. list-table::
-   :header-rows: 1
-   :widths: 20 30 50
-   
-   * - Étape
-     - Outils/Méthodes
-     - Description
-   * - Inverse Scaling
-     - Matrices Dummy + ``scaler.inverse_transform``
-     - Transformation des prédictions en USD
-   * - Nettoyage des Données
-     - Masque booléen + ``np.isnan()``
-     - Filtrage des valeurs aberrantes et NaN
-   * - Visualisation
-     - ``matplotlib``, ``plotly``	
-     - Comparaison graphique prix réel vs prédictions (données nettoyées)
-   * - Métriques de Performance
-     - ``MAE``, ``RMSE``, ``Directionnal Accuracy``
-     - Calcul des erreurs en USD et précision directionnelle
-   * - Sauvegarde
-    * - ``model.save()`` + ``joblib``	
-      - Export du modèle et du pipeline de préprocessing 
+     - ``model.save()`` + ``joblib``	
+     - Export du modèle et du pipeline de préprocessing 
