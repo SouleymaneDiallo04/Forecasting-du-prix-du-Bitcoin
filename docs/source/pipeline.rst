@@ -40,7 +40,7 @@ Phase 2: Modélisation et Optimisation
 
 .. list-table::
    :header-rows: 1
-   :widths: 20 30 50
+   :widths: 20 40 50
    
    * - Étape
      - Outils/Méthodes
@@ -89,3 +89,5 @@ Phase 3: Évaluation
    * - Sauvegarde
     * - ``model.save()`` + ``joblib``	
       - Export du modèle et du pipeline de préprocessing 
+
+
