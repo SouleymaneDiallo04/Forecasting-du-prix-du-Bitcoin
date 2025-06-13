@@ -1,7 +1,7 @@
 .. _pipeline:
 
-Pipeline de Prédiction du Bitcoin
-================================
+Pipeline
+========
 
 Phases du Pipeline
 ------------------
