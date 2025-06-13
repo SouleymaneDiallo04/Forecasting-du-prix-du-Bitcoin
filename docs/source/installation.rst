@@ -17,7 +17,6 @@ Le projet nécessite les bibliothèques Python suivantes :
 11. **optuna** : Optimisation d'hyperparamètres
 12. **pykalman** : Implémentation du filtre de Kalman
 
-
 .. code-block:: python
 
 import numpy
