@@ -74,11 +74,20 @@ Phase 1: Préparation des Données
      - ``pd.dropna()`` + Masques booléens
      - Gestion des valeurs manquantes et outliers
    * - Feature Engineering
-     - Volatilité, MACD, Lags
-     - Création de 30+ indicateurs techniques
+     - Volatilité, MACD, Lags Fear_Greed
+     - Création de 15+ indicateurs techniques et décalages temporels
+   * - Analyse Univariée
+     - KPSS, ADFuller, ACF/PACF
+     - Tests de stationnarité et analyse d'autocorrélation
+   * - Analyse Bivariée
+     - Matrice de corrélation, Lag Analysis
+     - Identification des relations entre features et target
+   * Préprocessing
+     - ``RobustScaler()``
+     - Normalisation robuste aux outliers
 
-Phase 2: Modélisation
-^^^^^^^^^^^^^^^^^^^^^
+Phase 2: Modélisation et Optimisation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
    :header-rows: 1
@@ -87,15 +96,24 @@ Phase 2: Modélisation
    * - Étape
      - Outils/Méthodes
      - Description
-   * - Séquencement
+   * - Création de Séquences
      - ``SequenceTransformer``
-     - Découpage en fenêtres temporelles de 60 pas
-   * - Optimisation
-     - ``Optuna`` (50 essais)
-     - Recherche des hyperparamètres optimaux
-   * - Entraînement
-     - ``EarlyStopping`` + ``ReduceLROnPlateau``
-     - Régulation dynamique du processus
+     - Transformation en séquences temporelles (60 pas)
+   * - Split Temporel	
+     - ``TimeSeriesSplit(n_splits=5)``	
+     - Validation croisée temporelle (80/20)
+   * - Architecture Modèle	
+     - ``build_advanced_model()``
+     - Choix entre LSTM/BiLSTM/CNN-LSTM avec couches configurables
+   * - Optimisation Hyperparams
+     - ``Optuna (50 essais)``
+     - Recherche automatique des meilleurs paramètres (unités, couches, dropout)
+   * - Callbacks Intelligents
+     - ``EarlyStopping``, ``ReduceLROnPlateau``
+     - Arrêt précoce et ajustement dynamique du learning rate
+   * - Entraînement Final
+     - ``Adam`` optimizer, ``Huber loss``	
+     - Entraînement sur données complètes (300 epochs)
 
 Phase 3: Évaluation
 ^^^^^^^^^^^^^^^^^^^
@@ -107,9 +125,16 @@ Phase 3: Évaluation
    * - Étape
      - Outils/Méthodes
      - Description
-   * - Métriques
-     - ``MAE``, ``RMSE``, ``R²``
-     - Calcul en USD après inverse scaling
-   * - Visualisation
-     - ``matplotlib`` + ``plotly``
-     - Comparaison interactive prix réel/préd
+   * - Inverse Scaling	
+     - Matrices Dummy + ``scaler.inverse_transform``
+     - Transformation des prédictions en USD
+   * - Nettoyage des Données	
+     - Masque booléen + ``np.isnan()``
+     - Filtrage des valeurs aberrantes et NaN
+   * - Visualisation	
+     - ``matplotlib``, ``plotly``	
+     - Comparaison graphique prix réel vs prédictions (données nettoyées)
+   * - Métriques de Performance	
+     - ``MAE``, ``RMSE``, ``Directionnal Accuracy``
+     - Calcul des erreurs en USD et qualité d'ajustement
+   * - Sauvegarde	``model.save()`` + ``joblib``	Export du modèle et du pipeline de préprocessing
