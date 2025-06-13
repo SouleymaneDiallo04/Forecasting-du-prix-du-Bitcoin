@@ -32,7 +32,7 @@ Visualisation des Prédictions
 
 Comparaison des prix réels et prédits sur la période de test :
 
-.. image:: dashbord.png
+.. image:: resultat.png
    :width: 100%
    :align: center
    :alt: Aperçu de l'interface
