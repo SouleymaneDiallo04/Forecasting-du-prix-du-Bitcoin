@@ -1,9 +1,6 @@
 .. _travaux-futurs:
 
 Perspectives Futures
-====================
-
-Perspectives Futures
 =====================
 
 Ce projet ouvre plusieurs pistes d'amélioration pour renforcer sa précision prédictive et son applicabilité dans des contextes réels de trading :
