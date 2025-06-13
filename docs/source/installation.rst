@@ -21,11 +21,8 @@ Le projet nécessite les bibliothèques Python suivantes :
 .. code-block:: python
 
 import numpy
-
 import pandas as pd
-
 import tensorflow as tf
-
 from tensorflow.keras.models import Model, Sequential
 from tensorflow.keras.layers import Input, Conv1D, LSTM, Dense, Dropout, GaussianNoise, GRU, MaxPooling1D, Bidirectional
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
