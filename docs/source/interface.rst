@@ -9,11 +9,6 @@ CryptoAnalyticsPro
 
 Cette application web interactive offre une suite complète d'outils pour l'analyse et la prédiction du prix du Bitcoin, intégrant:
 
-.. image:: dashbord.png
-   :width: 100%
-   :align: center
-   :alt: Aperçu de l'interface
-
 1. Système d'authentification sécurisé
 2. Utilisation données en temps  réel
 3. Calcul des indicateurs techniques
@@ -22,6 +17,11 @@ Cette application web interactive offre une suite complète d'outils pour l'anal
 6. Assistant trading intelligent
 7. Système d'alertes personnalisées
 8. Espace communautaire collaboratif
+
+.. image:: dashbord.png
+   :width: 100%
+   :align: center
+   :alt: Aperçu de l'interface
 
 Fonctionnalités Détailées avec Code
 ===================================
