@@ -1,9 +1,10 @@
 .. _preprocessing:
 
-Pipeline Complet de Prétraitement et Modélisation Bitcoin
-========================================================
+Pipeline Complet du Prétraitement
+=================================
 
-## 1. Chargement des Données
+1. Chargement des Données
+=========================
 
 .. code-block:: python
    :linenos:
@@ -19,9 +20,11 @@ Pipeline Complet de Prétraitement et Modélisation Bitcoin
    print(f"Dataset chargé avec {data.shape[0]} observations et {data.shape[1]} caractéristiques")
    print(data.head())
 
-## 2. Feature Engineering
+2. Feature Engineering
+=======================
 
-### Calcul des indicateurs techniques
+Calcul des indicateurs techniques
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: python
    :linenos:
@@ -45,7 +48,9 @@ Pipeline Complet de Prétraitement et Modélisation Bitcoin
        correlation = data[['Close', f'fear_greed_lag_{lag}']].corr().iloc[0,1]
        print(f"Corrélation avec un décalage de {lag} jours: {correlation:.4f}")
 
-## 3. Analyse Exploratoire
+3. Analyse Exploratoire
+=======================
+
 
 ### Analyse Univariée
 
@@ -112,7 +117,8 @@ Pipeline Complet de Prétraitement et Modélisation Bitcoin
    plot_pacf(data['Close'], lags=30, ax=ax[1])
    plt.tight_layout()
 
-## 4. Pipeline de Prétraitement
+4. Pipeline de Prétraitement
+============================
 
 ### Classe de Création de Séquences
 
@@ -154,7 +160,8 @@ Pipeline Complet de Prétraitement et Modélisation Bitcoin
            ('sequencer', SequenceTransformer(seq_length=seq_length, target_idx=target_idx))
        ])
 
-## 5. Architecture du Modèle
+5. Architecture du Modèle
+=========================
 
 .. code-block:: python
    :linenos:
@@ -189,7 +196,8 @@ Pipeline Complet de Prétraitement et Modélisation Bitcoin
    
        return model
 
-## 6. Optimisation des Hyperparamètres avec Optuna
+6. Optimisation des Hyperparamètres avec Optuna
+===============================================
 
 .. code-block:: python
    :linenos:
