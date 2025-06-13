@@ -32,9 +32,9 @@ Visualisation des Prédictions
 
 Comparaison des prix réels et prédits sur la période de test :
 
-.. image:: resultat.png
-   :alt: Comparaison prix réels vs prédits
+.. image:: dashbord.png
+   :width: 100%
    :align: center
-   :width: 90%
+   :alt: Aperçu de l'interface
    
    *Les prédictions (orange) suivent étroitement les prix réels (bleu), particulièrement dans les tendances stables*
