@@ -50,6 +50,9 @@ Cette approche composite offre une vue agrégée mais présente deux limitations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Innovation** : Combiner des modèles spécialisés sur différentes échelles de temps  
+
 - **Court terme (1h-24h)** 
+
 - **Moyen terme (1-7j)** 
+
 - **Long terme (>1 semaine)** 
