@@ -15,8 +15,11 @@ Sources de Données
 
 1. **Données de Marché (OHLCV - Open, High, Low, Close, Volume)**
    - **Source**: `CoinGecko API <https://www.coingecko.com/en/api>`_
+
    - **Période**: 2019-03-15 à 2025-03-15
+
    - **Fréquence**: Quotidienne
+
    - **Code de collecte**:
 
    .. code-block:: python
