@@ -389,14 +389,12 @@ Calcul des Métriques de Performance
    # Calcul des métriques
    mae = mean_absolute_error(y_actual_clean, y_pred_clean)
    rmse = np.sqrt(mean_squared_error(y_actual_clean, y_pred_clean))
-   r2 = r2_score(y_actual_clean, y_pred_clean)
    
    # Affichage des résultats
    print("\nPerformance du Modèle:")
    print(f"MAE: {mae:.2f} USD")
    print(f"RMSE: {rmse:.2f} USD")
-   print(f"R²: {r2:.4f}")
-   
+   print(f"Directionnal Accuracy : {DA:.2f} %")   
    # Sauvegarde des résultats
    with open('model_performance.txt', 'w') as f:
        f.write(f"MAE: {mae:.2f}\n")
