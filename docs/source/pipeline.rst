@@ -51,7 +51,7 @@ Pipeline de Prédiction du Bitcoin
        
        subgraph I[Validation & Visualisation]
            I1[Plot série temporelle] --> I2[Calcul métriques]
-           I2 --> I3["MAE, RMSE, R²"]
+           I2 --> I3["MAE, RMSE, DA"]
        end
 
 Phases du Pipeline
