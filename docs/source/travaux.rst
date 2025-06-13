@@ -3,11 +3,13 @@
 Perspectives Futures
 ====================
 
-## Évolution Stratégique du Projet
+Évolution Stratégique du Projet
+===============================
 
 Ce projet ouvre plusieurs pistes d'amélioration pour renforcer sa précision prédictive et son applicabilité dans des contextes réels de trading :
 
-### 1. Intégration Avancée du Sentiment Social
+1. Intégration Avancée du Sentiment Social
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Objectif** : Dépasser l'indice Fear & Greed par une analyse multi-source des réseaux sociaux  
 **Approche** :
@@ -19,11 +21,13 @@ Ce projet ouvre plusieurs pistes d'amélioration pour renforcer sa précision pr
 - Capture des signaux précurseurs non reflétés dans les indices traditionnels
 - Détection de "hype cycles" et de mouvements de foule
 
-### 2. Surveillance des Comportements des Baleines
+2. Surveillance des Comportements des Baleines
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Objectif** : Intégrer les mouvements des gros détenteurs comme indicateur avancé  
 
-### 3. Architecture Multi-Temporelle
+3. Architecture Multi-Temporelle
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Innovation** : Combiner des modèles spécialisés sur différentes échelles de temps  
 - **Court terme (1h-24h)** 
