@@ -17,3 +17,28 @@ Le projet nécessite les bibliothèques Python suivantes :
 11. **optuna** : Optimisation d'hyperparamètres
 12. **pykalman** : Implémentation du filtre de Kalman
 
+
+.. codebloc Python
+
+import numpy
+import pandas as pd
+import tensorflow as tf
+from tensorflow.keras.models import Model, Sequential
+from tensorflow.keras.layers import Input, Conv1D, LSTM, Dense, Dropout, GaussianNoise, GRU, MaxPooling1D, Bidirectional
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
+from tensorflow.keras.optimizers import Adam
+from sklearn.preprocessing import RobustScaler
+from sklearn.metrics import mean_absolute_error
+from sklearn.model_selection import TimeSeriesSplit
+import matplotlib.pyplot as plt
+import joblib
+import seaborn as sns
+import warnings
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+from statsmodels.tsa.stattools import adfuller, kpss
+from statsmodels.tsa.arima.model import ARIMA
+import optuna
+from sklearn.base import BaseEstimator, TransformerMixin
+from sklearn.pipeline import Pipeline
+from pykalman import KalmanFilter
