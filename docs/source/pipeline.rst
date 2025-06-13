@@ -98,21 +98,25 @@ Phase 3: Évaluation
    :header-rows: 1
    :widths: 20 30 50
    
+.. list-table::
+   :header-rows: 1
+   :widths: 20 30 50
+   
    * - Étape
      - Outils/Méthodes
      - Description
    * - Inverse Scaling
-     - ``scaler.inverse_transform``
-     - Conversion en USD
-   * - Nettoyage
-     - ``np.isnan()``
-     - Filtrage des NaN
+     - Matrices Dummy + ``scaler.inverse_transform``
+     - Transformation des prédictions en USD
+   * - Nettoyage des Données
+     - Masque booléen + ``np.isnan()``
+     - Filtrage des valeurs aberrantes et NaN
    * - Visualisation
-     - ``matplotlib``
-     - Graphiques comparatifs
-   * - Métriques
-     - ``MAE``, ``RMSE``
-     - Performance en USD
+     - ``matplotlib``, ``plotly``	
+     - Comparaison graphique prix réel vs prédictions (données nettoyées)
+   * - Métriques de Performance
+     - ``MAE``, ``RMSE``, ``Directionnal Accuracy``
+     - Calcul des erreurs en USD et précision directionnelle
    * - Sauvegarde
-     - ``model.save()``
-     - Export final
+    * - ``model.save()`` + ``joblib``	
+      - Export du modèle et du pipeline de préprocessing 
