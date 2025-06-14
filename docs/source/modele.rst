@@ -1,7 +1,7 @@
 .. _modele-section:
 
-Modèle de Prédiction du Bitcoin
-===============================
+Modèle
+======
 
 Ce document décrit l'architecture et l'implémentation du modèle de prédiction des prix Bitcoin utilisant des réseaux de neurones profonds.
 
