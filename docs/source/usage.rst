@@ -23,7 +23,7 @@ Les principales métriques d'évaluation sur l'ensemble de test :
 | **RMSE** (Root Mean Square   | 2371.43  | Mesure des erreurs importantes avec     |
 | Error)                       |          | pondération quadratique                 |
 +------------------------------+----------+-----------------------------------------+
-| **Précision Directionnelle** | 72.3%    | Pourcentage de prédictions correctes    |
+| **Précision Directionnelle** | 68.34%    | Pourcentage de prédictions correctes    |
 |                              |          | de la tendance (hausse/baisse)          |
 +------------------------------+----------+-----------------------------------------+
 
