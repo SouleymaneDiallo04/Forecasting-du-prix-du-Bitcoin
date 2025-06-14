@@ -1,7 +1,7 @@
 .. _preprocessing:
 
-Pipeline Complet du Prétraitement
-=================================
+Prétraitement
+=============
 
 1. Chargement des Données
 =========================
