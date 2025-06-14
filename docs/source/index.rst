@@ -1,8 +1,8 @@
 .. Bitcoin Price Prediction documentation master file
 
-===============================================================================================================
-Documentation du projet : Modèle de prédiction du prix du Bitcoin par IA avec analyse de sentiment des réseaux 
-===============================================================================================================
+======================================================================================================================
+Documentation du projet : Modèle de prédiction du prix du Bitcoin par IA avec analyse de sentiment des réseaux sociaux
+=======================================================================================================================
 **Bienvenue dans la documentation du projet IA de Prédiction du Prix du Bitcoin .**
 
 Ce document détaille les méthodologies, les résultats obtenus ainsi les outils utilisés pour fournir une meilleure estimation du prix de cet actif.
