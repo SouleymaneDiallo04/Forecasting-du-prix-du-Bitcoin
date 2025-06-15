@@ -30,9 +30,7 @@ Cette approche composite offre une vue agrégée mais présente deux limitations
 
 - Collecte en temps réel des données Twitter via l'API v2
 
-- Analyse sémantique des discussions Reddit (r/Bitcoin, r/CryptoCurrency)
-
-- Création d'un indice composite de sentiment social (SSI)
+- Analyse sémantique des discussions Reddit
 
 **Avantages attendus** :
 - Capture des signaux précurseurs non reflétés dans les indices traditionnels
