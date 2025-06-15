@@ -9,7 +9,7 @@ Ce document détaille les méthodologies, les résultats obtenus ainsi les outil
 La forte volatilité de cette cryptomonnaie justifie l'incorporation de données non-structurelles, comme le sentiment afin d'améliorer les prévisions. L’objectif de ce projet est donc de développer un système de prédiction robuste en combinant plusieurs approches et techniques de l'IA.
 
 =============
-Préparé par :
+Réalisé par :
 =============
 
 - **DIALLO Souleymane**
@@ -17,7 +17,7 @@ Préparé par :
 - **HINIMDOU Morsia Guitdam**
 
 ============
-Encadé par :
+Encadré par :
 ============
 
 - **Mr. Tawfik Masrour**
