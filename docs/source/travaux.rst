@@ -33,7 +33,9 @@ Cette approche composite offre une vue agrégée mais présente deux limitations
 - Analyse sémantique des discussions Reddit
 
 **Avantages attendus** :
+
 - Capture des signaux précurseurs non reflétés dans les indices traditionnels
+
 - Détection de "hype cycles" et de mouvements de foule
 
 2. Surveillance des Comportements des Baleines
