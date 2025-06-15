@@ -51,8 +51,8 @@ Ces données peuvent être récupérées sur des sites On-Chain spécialisés da
 
 - **CryptoQuant :** $99/mois pour le plan "Professional" et $899/mois pour le plan "Enterprise".
 
-3. Intégration des Données Macroéconomiques comme l'**Or** et **Ethereum**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+3. Intégration des Données Macroéconomiques : **Or** et **Ethereum**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Dans le monde du Bitcoin et du trading en général l'Or est souvent utilisé comme **Baromètre** des marchés financiers.Il sert de **refuge** durant les periodes de crise ou de forte volatilité et maintient souvent une forte corrélation avec le prix du Bitcoin durant les périodes de crises inflationnistes ou géopolitiques.
 
