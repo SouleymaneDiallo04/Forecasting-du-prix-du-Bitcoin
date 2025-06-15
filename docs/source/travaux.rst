@@ -43,13 +43,13 @@ Cette approche composite offre une vue agrégée mais présente deux limitations
 
 **Objectif** : Intégrer les mouvements des gros détenteurs comme indicateur avancé  
 
-Ces données pourraient significativement améliorer les performances du modèle car l'activité des baleines est souvent considérée comme un indicateur avancé des mouvements de marché. Elle offre une meilleure anticipation des renversements du prix et leur  mouvement (achats/ventes massifs) précède souvent les tendances du marché.
+Les **"Whales count"** ou **"Comptes Baleines"** sont des métriques on-chain qui mesurent le nombre d'adresses détenant de très grands volumes de Bitcoin. Elles pourraient significativement améliorer les performances du modèle car l'activité des baleines est souvent considérée comme un indicateur avancé des mouvements de marché. De plus Elles offrent une meilleure anticipation des renversements du prix et leurs  mouvements (achats/ventes massifs) précèdent souvent les tendances du marché.
 
 Ces données peuvent être récupérées sur des sites On-Chain spécialisés dans le marché crypto comme : 
 
 - **API Glassnode :** Abonnement allant de 29$ à 799$ par mois selon la quantité voulue.
 
-- **CryptoQuant :** $99/mois pour le plan "Professional" et $899/mois "Enterprise".
+- **CryptoQuant :** $99/mois pour le plan "Professional" et $899/mois pour le plan "Enterprise".
 
 3. Intégration des Données Macroéconomiques comme l'**Or** et **Ethereum**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
