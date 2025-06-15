@@ -46,9 +46,9 @@ Cette approche composite offre une vue agrégée mais présente deux limitations
 Ces données pourraient significativement améliorer les performances du modèle car l'activité des baleines est souvent considérée comme un indicateur avancé des mouvements de marché. Elle offre une meilleure anticipation des renversements du prix et leur  mouvement (achats/ventes massifs) précède souvent les tendances du marché.
 Ces données peuvent être récupérées sur des sites On-Chain spécialisés dans le marché crypto comme : 
 
-- **API Glassnode : **Abonnement allant de 29$ à 799$ par mois selon la quantité voulue.
+- **API Glassnode :** Abonnement allant de 29$ à 799$ par mois selon la quantité voulue.
 
-- **CryptoQuant : **$99/mois pour le plan "Professional" et $899/mois  Enterprise.
+- **CryptoQuant :** $99/mois pour le plan "Professional" et $899/mois  Enterprise.
 
 3. Intégration des Données Macroéconomiques comme l'**Or** et **Ethereum**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
