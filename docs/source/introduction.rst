@@ -12,7 +12,7 @@ Ce projet propose un système avancé de prévision des prix du Bitcoin (BTC) ba
 
 Ce modèle surpasse les approches classiques (qui n'utilisent que les valeurs passées de la cible pour prédire les prix futurs) et propose   une approche différente en utilisant non seulement **l'historique de la cible** (prix BTC) mais aussi l'historique **d'autres variables explicatives**   afin d'améliorer la qualité de la prédiction.
 
-L'objectif principal est de dépasser les approches classiques en incorporant:
+L'objectif principal est donc de dépasser les approches classiques en incorporant:
 
 - Les indicateurs techniques avancés (MACD, volatilité implicite)
 - Le sentiment des marchés via l'indice Fear & Greed
