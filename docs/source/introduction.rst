@@ -10,7 +10,7 @@ Ce projet propose un système avancé de prévision des prix du Bitcoin (BTC) ba
 3. **Optimisation hyperparamétrique** : Recherche automatique des configurations optimales
 4. **Validation rigoureuse** : Protocoles anti-surapprentissage adaptés aux séries financières
 
-Ce modèle surpasse les approches classiques (qui n'utilisent que les valeurs passées de la cible pour prédire les prix futurs) et propose une approche différente en utilisant non seulement **l'historique de la cible** (prix BTC) mais aussi l'historique **d'autres variables explicatives** afin d'améliorer la qualité de la prédiction.
+Ce modèle surpasse les approches classiques (qui n'utilisent que les valeurs passées de la cible pour prédire les prix futurs) et propose   une approche différente en utilisant non seulement **l'historique de la cible** (prix BTC) mais aussi l'historique **d'autres variables explicatives**   afin d'améliorer la qualité de la prédiction.
 
 L'objectif principal est de dépasser les approches classiques en incorporant:
 
