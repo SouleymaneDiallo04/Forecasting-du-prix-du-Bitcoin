@@ -41,3 +41,5 @@ Erreur Moyenne Absolue (MAE) : ±1 522 USD
 Précision directionnelle : 72%
 
 Horizon de prédiction : 24 à 72 heures
+
+# Lien de la Documentation Readthedocs : https://forecasting-du-prix-du-bitcoin.readthedocs.io/fr/latest/
